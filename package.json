@@ -1,0 +1,19 @@
+{
+  "name": "xuder",
+  "version": "0.5.0",
+  "description": "rethink redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N-UX/xuder.git"
+  },
+  "author": "GitNiko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/N-UX/xuder/issues"
+  },
+  "homepage": "https://github.com/N-UX/xuder#readme"
+}

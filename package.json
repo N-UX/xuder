@@ -4,7 +4,14 @@
   "description": "rethink redux",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --bracketSpacing",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -15,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/N-UX/xuder/issues"
   },
-  "homepage": "https://github.com/N-UX/xuder#readme"
+  "homepage": "https://github.com/N-UX/xuder#readme",
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.3",
+    "prettier": "1.11.1"
+  }
 }

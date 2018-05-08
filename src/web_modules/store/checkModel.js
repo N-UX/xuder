@@ -178,12 +178,12 @@ import { combineEpics } from "redux-observable";
    */
   function handleEpic(model, actionType, epic = identify) {
     return (action$, store) =>
-      action$.ofType(actionType).mergeMap(action => {
-        return epic(action, store, res => {
+      // action$.ofType(actionType).mergeMap(action => {
+         epic(action$, store,actionType, res => {
           const newType = `${model.namespace}${NAMESPACE_SEP}${res.type}`;
           return { ...res, type: newType };
         });
-      });
+      // });
   }
 
   /**

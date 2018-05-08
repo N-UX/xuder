@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_ROOT = "http://hades-api.dev.nongfenqi.com";
+const API_ROOT = "http://hades-api.test.nongfenqi.com";
 const http = (
   data,
   url,
